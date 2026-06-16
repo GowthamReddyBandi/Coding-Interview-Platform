@@ -20,4 +20,4 @@ A web application that helps students practice coding questions and track their 
 
 ## Author
 
-Your Name
+Gowtham Reddy Bandi
