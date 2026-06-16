@@ -1,0 +1,309 @@
+/* RESET */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+/* BODY */
+
+body{
+    font-family:Arial, sans-serif;
+    background:#f4f4f4;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    min-height:100vh;
+
+    transition:0.3s;
+}
+
+/* CONTAINER */
+
+.container{
+    width:750px;
+    max-width:95%;
+
+    background:white;
+
+    padding:40px;
+
+    border-radius:15px;
+
+    text-align:center;
+
+    box-shadow:0 4px 15px rgba(0,0,0,0.1);
+
+    transition:0.3s;
+}
+
+/* HEADINGS */
+
+h1{
+    color:navy;
+    margin-bottom:10px;
+}
+
+h2{
+    margin-bottom:15px;
+}
+
+h3{
+    margin-bottom:8px;
+}
+
+/* BUTTONS */
+
+button{
+    background:navy;
+    color:white;
+
+    border:none;
+
+    padding:10px 20px;
+
+    border-radius:8px;
+
+    cursor:pointer;
+
+    margin:5px;
+
+    transition:0.3s;
+}
+
+button:hover{
+    opacity:0.9;
+    transform:translateY(-2px);
+}
+
+/* INPUTS */
+
+input,
+select{
+    width:100%;
+
+    padding:12px;
+
+    margin:10px 0;
+
+    border:1px solid #ccc;
+
+    border-radius:8px;
+
+    font-size:15px;
+}
+
+/* SECTIONS */
+
+.login-form,
+.register-form,
+.dashboard,
+.questions-section{
+    display:none;
+    margin-top:20px;
+}
+
+/* DASHBOARD CARDS */
+
+.card{
+    background:#f8f8f8;
+
+    margin-top:15px;
+
+    padding:15px;
+
+    border-radius:10px;
+
+    border:1px solid #ddd;
+
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:translateY(-3px);
+}
+
+/* SPECIAL STREAK CARD */
+
+#streakCount{
+    font-size:24px;
+    font-weight:bold;
+    color:#ff6b00;
+}
+
+#lastSolvedDate{
+    font-weight:bold;
+}
+
+/* QUESTION CARD */
+
+.question{
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:15px;
+
+    margin-top:12px;
+
+    border:1px solid #ddd;
+
+    border-radius:10px;
+
+    background:white;
+
+    transition:0.3s;
+}
+
+.question:hover{
+    transform:translateY(-2px);
+}
+
+/* COMPLETED QUESTIONS */
+
+.completed{
+    background:#e8ffe8;
+    border:2px solid green;
+}
+
+.completed button{
+    background:#2e7d32;
+}
+
+/* DIFFICULTY TAGS */
+
+.easy{
+    color:#22c55e;
+    font-weight:bold;
+}
+
+.medium{
+    color:#f59e0b;
+    font-weight:bold;
+}
+
+.hard{
+    color:#ef4444;
+    font-weight:bold;
+}
+
+/* REGISTER LINK */
+
+.switch-text{
+    margin-top:10px;
+}
+
+.switch-text span{
+    color:#2563eb;
+    cursor:pointer;
+    font-weight:bold;
+}
+
+.switch-text span:hover{
+    text-decoration:underline;
+}
+
+/* PROGRESS BAR */
+
+.progress-container{
+    width:100%;
+
+    height:20px;
+
+    background:#ddd;
+
+    border-radius:10px;
+
+    overflow:hidden;
+
+    margin-top:10px;
+}
+
+.progress-bar{
+    width:0%;
+
+    height:100%;
+
+    background:#22c55e;
+
+    transition:0.5s;
+}
+
+/* DARK MODE */
+
+.dark{
+    background:#121212;
+    color:white;
+}
+
+.dark .container{
+    background:#1e1e1e;
+    color:white;
+}
+
+.dark h1,
+.dark h2,
+.dark h3,
+.dark p,
+.dark span{
+    color:white;
+}
+
+.dark .card{
+    background:#2c2c2c;
+    border:1px solid #444;
+}
+
+.dark .question{
+    background:#2c2c2c;
+    border:1px solid #444;
+    color:white;
+}
+
+.dark input,
+.dark select{
+    background:#2c2c2c;
+    color:white;
+    border:1px solid #555;
+}
+
+.dark input::placeholder{
+    color:#bbb;
+}
+
+.dark .completed{
+    background:#1f3d1f;
+    border:2px solid #4caf50;
+}
+
+.dark .completed button{
+    background:#4caf50;
+}
+
+.dark .progress-container{
+    background:#444;
+}
+
+/* RESPONSIVE */
+
+@media(max-width:768px){
+
+    .container{
+        width:95%;
+        padding:20px;
+    }
+
+    .question{
+        flex-direction:column;
+        gap:10px;
+    }
+
+    button{
+        width:100%;
+    }
+}

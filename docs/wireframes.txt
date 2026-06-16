@@ -1,0 +1,11 @@
+Pages:
+1. Login Page
+2. Dashboard
+3. Questions Page
+4. Profile Page
+
+Components:
+- Login Form
+- Progress Cards
+- Question List
+- Search Bar
